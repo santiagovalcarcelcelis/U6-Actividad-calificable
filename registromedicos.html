@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style-registromedicos.css">
+    <title>REGISTRO MEDICOS</title>
+</head>
+<body>
+    <header>
+        <H1>IPS PRESTACION DE SERVICIOS</H1>
+    </header>
+    <main>
+        <form id="registro-medicos.form">
+        <h2>Registro médicos por especialidad</h2>
+        <label for="nombre">Nombre:<span> *</span></label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:<span> *</span></label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="cedula">Número de Cédula:<span> *</span></label>
+            <input type="text" id="cedula" name="cedula" required>
+            <label for="especialidad">Especialidad Médica:<span> *</span></label>
+            <select id="especialidad" name="especialidad">
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Medicina Interna">Medicina Interna</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Rehabilitación física">Rehabilitación física</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option>
+            </select>
+            <label for="consultorio">Número de consultorio:<span> *</span></label>
+            <input type="number" id="consultorio" name="consultorio" required>
+            <label for="correo">Correo de contacto:<span> *</span></label>
+            <input type="email" id="correo" name="correo" required>
+
+            
+
+            <input type="submit" value="Enviar">
+        </form>
+        <div class="boton-container">
+            <form action="home.html">
+                <button type="submit"> Volver </button>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="volver.js"></script>
+<script src="/registromedicos.js"></script>
+</html>
